@@ -446,8 +446,8 @@ async function start() {
     );
 
     // Start Fastify server
-    const PORT = 8900;
-    await app.listen({ port: PORT, host: '0.0.0.0' });
+   const PORT = parseInt(process.env.PORT || '8900', 10);
+   await app.listen({ port: PORT, host: '0.0.0.0' });
     console.log(`🚀 Server running: http://localhost:${PORT}`);
     console.log(`🛠️ Admin Panel: http://localhost:${PORT}${adminJs.options.rootPath}`);
   } catch (err) {
