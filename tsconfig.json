@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // Modern target
+    "module": "NodeNext",                   // More updated than Node16
+    "moduleResolution": "node16",           // OK to keep
+    "outDir": "dist",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
